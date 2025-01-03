@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hydra Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/FrameFooter.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+
+  <body class="mx-auto w-screen h-screen overflow-x-hidden bg-maincolor relative">
+    <div
+      class="absolute -z-10 top-0 lg:bg-[url('assets/images/Group3.svg')] bg-no-repeat bg-top w-screen h-screen"
+    ></div>
+
+    <!-- Header Landing -->
+      <header
+        class="container flex items-center justify-between w-full px-2.5 pt-12"
+      >
+        <div class="logo-container flex items-center">
+          <img src="assets/images/Frame.png" class="w-[69px]" alt="hydra"/>
+          <img src="assets/images/hydra.png" class="w-[46px] md:w-[76px]" alt="hydra"/>
+        </div>
+        <nav class="navigation w-full lg:w-[344px]  lg:block text-sm font-semibold">
+          <div class="navBar h-0 lg:h-auto overflow-hidden right-0 top-0 w-3/4 lg:w-full  duration-300  absolute lg:static ">
+            <div class="flex bg-maincolor  w-full flex-col justify-around lg:flex-row p-5 lg:p-0  items-end lg:items-center gap-10 text-white">
+              <img src="assets/images/close.svg" class="lg:hidden size-7 cursor-pointer closeBtn">
+              <p class="cursor-pointer hover:text-yellow-100"><a>About</a></p>
+              <p class="cursor-pointer hover:text-yellow-100"><a>Services</a></p>
+              <p class="cursor-pointer hover:text-yellow-100"><a>Technologies</a></p>
+              <p class="cursor-pointer hover:text-yellow-100"><a>How To</a></p>
+            </div>
+          </div>
+
+        </nav>
+        <div class="right-buttons hidden lg:block">
+          <button
+            class="Rectangle5  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 border border-purple font-semibold transition-all duration-200 text-sm px-5 py-1.5 hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white text-justify"
+          >
+            Contact Us
+          </button>
+          <button
+            class="Rectangle5  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 border border-purple ml-5 font-semibold transition-all duration-200 text-sm px-5 py-1.5 hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white text-justify"
+          >
+            Join Hydra
+          </button>
+        </div>
+        <button id="burgerMenu" class="lg:hidden">
+          <img src="assets/images/Hamburger-Button.svg" alt="hydra" />
+        </button>
+       </header>
+
+    <!-- Dive: Virtual Reality -->
+      <section class="hero bg-[url('assets/images/bg-lines.svg')] lg:bg-none bg-no-repeat bg-top md:bg-right bg-transparent">
+        <div class="container">
+          <div class="flex flex-col">
+            <div
+              class="hero-image pt-28 flex flex-col items-center md:flex-row md:justify-between md:gap-x-1 lg:gap-x-64 gap-y-8"
+            >
+              <img
+                src="assets/images/hero-image.png "
+                class="md:order-2 lg:w-5/12"
+                alt=""
+              />
+              <div
+                class="hero-title bg-transparent text-center md:order-1 flex flex-col gap-y-8 items-center md:items-start justify-between lg:w-5/12"
+              >
+                <h2
+                  class="text-white font-bold text-3xl md:text-left leading-loose"
+                >
+                  <span class="text-violet-300 font-bold text-5xl">Dive</span>
+                  Into The Depths Of<span
+                    class="text-violet-300 font-bold text-4xl"
+                  >
+                    Virtual Reality</span
+                  >
+                </h2>
+                <p
+                  class="md:text-left text-center text-sm text-purple leading-relaxed"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore nisl tincidunt
+                  eget. Lectus mauris eros in vitae .
+                </p>
+                <div class="flex gap-10">
+                  <button
+                    class="Rectangle5 h-12 w-52 flex-shrink-0 text-center border border-purple font-semibold transition-all duration-200  hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white"
+                  >
+                    Build Your World
+                  </button>
+                  <img
+                    src="assets/images/arrow.svg"
+                    class="hidden md:block flex-shrink-1"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-28">
+              <div class="swiper-container   relative bg-[radial-gradient(circle,#3A3456,#211E2E)] rounded-full shadow drop-shadow-xl p-10">
+                <div class="swiper-wrapper w-full flex justify-between items-center ">
+
+                  <div class="swiper-slide left-div !flex justify-center items-center gap-2">
+                    <img class="size-14" src="assets/images/Location.svg" />
+                    <div class="flex flex-col">
+                      <label class="text-white text-bold text-2xl">Pay Us a Visit</label>
+                      <span class="text-md text-white">Union St, Seattle, WA 98101, United States</span>
+                    </div>
+                  </div>
+                  <hr class="hidden md:block h-16 w-[0.5px] border bg-gray-50" />
+                  <div class="swiper-slide bottom-div   !flex justify-center items-center gap-2">
+                    <img class="size-14" src="assets/images/phone.svg" />
+                    <div class="flex flex-col">
+                      <label class="text-white text-bold text-2xl">Give Us a Call</label>
+                      <span class="text-md text-white">(110) 1111-1010</span>
+                    </div>
+                  </div>
+                  <hr class=" hidden md:block h-16 w-[0.5px] border bg-gray-50" />
+
+                  <div class="swiper-slide right-div !flex justify-center items-center gap-2">
+                    <img class="size-14" src="assets/images/mail.svg" />
+                    <div class="flex flex-col">
+                      <label class="text-white text-bold text-2xl">Send Us a Message</label>
+                      <span class="text-md text-white">Contact@HydraVTech.com</span>
+                    </div>
+                  </div>
+                
+
+                </div>
+            
+                <button class="swiper-button-prevP absolute top-1/2 left-0 z-10">
+                  <img src="assets/images/chevron-circle-left.svg" alt="Previous" />
+                </button>
+                <button class="swiper-button-nextN absolute top-1/2 right-0 z-10">
+                  <img src="assets/images/chevron-circle-right.svg" alt="Next" />
+                </button>
+            
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+       </section>
+
+    <!-- INTRODUCTION: TO HYDRA VR -->
+      <section
+          class="Introduction mt-24 bg-[url('assets/images/IntroductionBg.svg')] bg-no-repeat bg-bottom"
+        >
+          <div class="container">
+            <div class="flex flex-col gap-16">
+              <div class="flex flex-col md:flex-row justify-between">
+                <div class=" left-div flex flex-col lg:flex-row md:w-1/2 p-2">
+                  <h3
+                    class="font-bold text-3xl text-center md:text-left text-white"
+                  >
+                    INTRODUCTION <br /><span class="font-light block my-4"
+                      >TO HYDRA VR</span
+                    >
+                  </h3>
+                  <img
+                    src="./assets/images/longArrow.svg"
+                    class="hidden lg:block w-64"
+                  />
+                </div>
+                <div class="right-div md:w-1/2">
+                  <p class="text-md text-justify text-white p-2">
+                    Vitae sapien pellentesque habitant morbi tristique senectus et
+                    netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+                    lectus. Mi sit amet mauris commodo quis imperdiet massa
+                    tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                    lectus sit amet est placerat in. Lectus magna fringilla urna
+                    porttitor rhoncus vitae.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex right-div flex-col gap-y-8 gap-x-5 items-center md:flex-row justify-between"
+              >
+                <img
+                  src="assets/images/IntroductionPhoto.png"
+                  alt="hydra"
+                  class="right-div max-h-96 max-w-96 lg:w-6/12"
+                />
+                <div
+                  class="right-div flex flex-col items-center lg:items-start gap-y-8 md:w-6/12"
+                >
+                  <h3
+                    class="font-bold text-3xl text-center lg:text-left w-full text-white"
+                  >
+                    ABOUT<br /><span class="font-light block my-4">HYDRA VR</span>
+                  </h3>
+                  <p class="text-white text-justify p-2">
+                    Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
+                    mattis rhoncus urna neque viverra justo. Vivamus at augue eget
+                    arcu dictum. Ultrices gravida dictum fusce ut placerat orci.
+                    Aenean et tortor at risus viverra adipiscing at in. Mattis
+                    aliquam faucibus purus in massa. Est placerat in egestas erat
+                    imperdiet sed. Consequat semper viverra nam libero justo laoreet
+                    sit amet. Aliquam etiam erat velit scelerisque in dictum non
+                    consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec
+                    ac odio tempor orci dapibus. Sem nulla pha retra diam sit amet
+                    nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n
+                    tempor.
+                  </p>
+
+                  <button
+                    class="Rectangle5 h-12 w-52 flex-shrink-0 text-center border border-purple transition-all duration-200 hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white"
+                  >
+                    Get In Touch
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>
+
+    <!-- Section : Why Build - Cards -->
+      <section class="mt-20">
+        <div class="container">
+
+
+          <div class="flex flex-col md:flex-row justify-center items-center lg:items-start text-white mb-10">
+            <div class="left-div md:w-1/2 w-full flex justify-center items-center md:items-start">
+              <div>
+                <p class="text-4xl text-bold text-center md:text-left">WHY BUILD</p>
+                <p class="text-3xl mt-4 font-light text-center md:text-left">WITH HYDRA?</p>
+              </div>
+              <img
+                class="mt-11 hidden lg:block"
+                src="./assets/images/Arrow2.svg"
+                alt=""
+              />
+            </div>
+
+            <div class=" right-div w-1/2">
+              <p class="text-sm text-justify hidden md:block">
+                Vitae sapien pellentesque habitant morbi tristique senectus et
+                netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+                lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+                nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+                est placerat in. Lectus magna fringilla urna porttitor rhoncus
+                vitae.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-container mySwiper container relative">
+            <div class="swiper-wrapper ">
+              <!-- Slide 1 -->
+              <div class="swiper-slide left-div text-white bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 !flex flex-col items-center">
+                <img
+                  class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
+                  src="./assets/images/SIMULATION.svg"
+                  alt="Simulation"
+                />
+                <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
+                  SIMULATION
+                </p>
+                <p class="text-xs mt-6 break-words w-56">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+                <button
+                  class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                >
+                  TRY IT NOW
+                </button>
+              </div>
+          
+              <!-- Slide 2 -->
+              <div class="swiper-slide bottom-div text-white bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 !flex flex-col items-center">
+                <img
+                  class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
+                  src="./assets/images/EDUCATION.svg"
+                  alt="Education"
+                />
+                <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
+                  EDUCATION
+                </p>
+                <p class="text-xs mt-6 break-words w-56">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+                <button
+                  class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                >
+                  TRY IT NOW
+                </button>
+              </div>
+          
+              <!-- Slide 3 -->
+              <div class="swiper-slide bottom-div text-white bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 !flex flex-col items-center">
+                <img
+                  class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
+                  src="./assets/images/SELF-CARE.svg"
+                  alt="Self-Care"
+                />
+                <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
+                  SELF-CARE
+                </p>
+                <p class="text-xs mt-6 break-words w-56">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+                <button
+                  class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                >
+                  TRY IT NOW
+                </button>
+              </div>
+          
+              <!-- Slide 4 -->
+              <div class="swiper-slid right-div text-white bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 !flex flex-col items-center">
+                <img
+                  class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
+                  src="./assets/images/OUTDOOR.svg"
+                  alt="Outdoor"
+                />
+                <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
+                  OUTDOOR
+                </p>
+                <p class="text-xs mt-6 break-words w-56">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+                <button
+                  class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                >
+                  TRY IT NOW
+                </button>
+              </div>
+            </div>
+          
+              <button class="swiper-button-prevP absolute top-1/2 left-0 translate-x-1 z-10">
+                <img src="assets/images/arrowPrev.svg" alt="Previous" />
+              </button>
+              <button class="swiper-button-nextN absolute top-1/2 right-0 -translate-x-1 z-10">
+                <img src="assets/images/arrowNext.svg" alt="Next" />
+              </button>
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+          
+        </div>
+       </section>
+
+    <!-- Section : Technologies -->
+      <section id="tech" class="mt-20">
+        <div class="container right-div flex flex-col gap-24">
+          <div class="relative bg-[url('assets/images/techPic.svg')] rounded-full bg-no-repeat bg-center bg-cover h-[19rem] w-full">
+            <div class="h-full w-full text-center table">
+              <div class="table-cell align-middle">
+                <p class="font-bold text-3xl text-white">TECHNOLOGIES & HARDWARE</p>
+                <p class="font-light text-3xl text-white">USED BY HYDRA VR.</p>
+              </div>
+            </div>
+        
+            <a>
+              <img src="assets/images/downIcon.png" class="absolute left-1/2 top-full -translate-x-1/2 -translate-y-1/2 md:block">
+            </a>
+          </div>
+        </div>
+        
+        
+       <div class="swiper-container container mt-28 relative">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide right-div !flex justify-center items-center mt-14">
+      <img class="max-w-full h-auto block" src="assets/images/unreal.png" alt="unreal" />
+    </div>
+    <div class="swiper-slide bottom-div !flex justify-center items-center">
+      <img class="max-w-full h-auto block" src="assets/images/VIVE.png" alt="VIVE" />
+    </div>
+    <div class="swiper-slide bottom-div !flex justify-center items-center">
+      <img class="max-w-full h-auto block" src="assets/images/oculus.png" alt="oculus" />
+    </div>
+    <div class="swiper-slide left-div !flex justify-center items-center">
+      <img class="max-w-full h-auto block" src="assets/images/unity.png" alt="unity" />
+    </div>
+  </div>
+ 
+  <button class="swiper-button-prevP absolute top-1/2 left-0 translate-x-1 z-10">
+    <img src="assets/images/arrowPrev.svg" alt="Previous" />
+  </button>
+  <button class="swiper-button-nextN absolute top-1/2 right-0 -translate-x-1 z-10">
+    <img src="assets/images/arrowNext.svg" alt="Next" />
+  </button>
+  
+  <div class="swiper-pagination"></div>
+</div>
+
+       </section>
+
+    <!-- Section : WITH HYDRA VR? -->
+      <section class="mt-20">
+        <div class="container ">
+
+          <div class="flex flex-col md:flex-row justify-center items-center lg:items-start text-white">
+            <div class="md:w-1/2 w-full flex items-center md:items-start justify-center">
+              <div>
+                <p class="text-3xl font-bold text-center md:text-left">HOW WE BUILD</p>
+                <p class="text-3xl mt-4 font-light text-center md:text-left">WITH HYDRA VR?</p>
+              </div>
+              <img
+                class="mt-11 hidden lg:block"
+                src="./assets/images/Arrow2.svg"
+                alt=""/>
+            </div>
+
+            <div class="w-1/2">
+              <p class="text-sm text-justify hidden md:block">
+                Vitae sapien pellentesque habitant morbi tristique senectus et
+                netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+                lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+                nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+                est placerat in. Lectus magna fringilla urna porttitor rhoncus
+                vitae.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-container container relative ">
+          <div class="swiper-wrapper  ">
+            <!-- اسلاید 1 -->
+            <div class="swiper-slide right-div flex justify-center items-center bg-center bg-no-repeat">
+              <div class="flex flex-col items-center mt-20">
+                <div class="rounded-full size-40 text-6xl font-black text-center text-[#343045] bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)] flex items-center justify-center">
+                  01
+                </div>
+                <div class="flex items-center mt-6">
+                  <img class="pb-9 hidden md:block" src="./assets/images/shape.svg" alt="" />
+                  <p class="text-white font-semibold ml-3 text-2xl">
+                    3D Conceptio <br /> & Design
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- اسلاید 2 -->
+            <div class="swiper-slide bottom-div flex justify-center items-center bg-center bg-no-repeat">
+              <div class="flex flex-col items-center mt-20">
+                <div class="rounded-full size-40 text-6xl font-black text-center text-[#343045] bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)] flex items-center justify-center">
+                  02
+                </div>
+                <div class="flex items-center mt-6">
+                  <img class="pb-9 hidden md:block" src="./assets/images/shape.svg" alt="" />
+                  <p class="text-white font-semibold ml-3 text-2xl">
+                    Interaction <br /> Design
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- اسلاید 3 -->
+            <div class="swiper-slide bottom-div flex justify-center items-center bg-center bg-no-repeat">
+              <div class="flex flex-col items-center mt-20">
+                <div class="rounded-full size-40 text-6xl font-black text-center text-[#343045] bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)] flex items-center justify-center">
+                  03
+                </div>
+                <div class="flex items-center mt-6">
+                  <img class="pb-9 hidden md:block" src="./assets/images/shape.svg" alt="" />
+                  <p class="text-white font-semibold ml-3 text-2xl">
+                    VR World <br /> User Testing
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- اسلاید 4 -->
+            <div class="swiper-slide left-div flex justify-center items-center bg-center bg-no-repeat">
+              <div class="flex flex-col items-center mt-20">
+                <div class="rounded-full size-40 text-6xl font-black text-center text-[#343045] bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)] flex items-center justify-center">
+                  04
+                </div>
+                <div class="flex items-center mt-6">
+                  <img class="pb-9 hidden md:block" src="./assets/images/shape.svg" alt="" />
+                  <p class="text-white font-semibold ml-3 text-2xl">
+                    Hydra VR <br /> Deploy
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <button class="swiper-button-prevP absolute top-2/3 left-0 translate-x-1 z-10">
+            <img src="assets/images/arrowPrev.svg" alt="Previous" />
+          </button>
+          <button class="swiper-button-nextN absolute top-2/3 right-0 -translate-x-1 z-10">
+            <img src="assets/images/arrowNext.svg" alt="Next" />
+          </button>
+        
+        </div>
+
+       </section>
+
+    <!-- Section : JoinHydra -->
+      <section class="mt-20">
+        <div class="container p-5 lg:p-24 text-center bg-[radial-gradient(circle,#3A3456,#211E2E)] rounded-3xl drop-shadow-xl bg-no-repeat bg-center grid grid-cols-1 md:grid-cols-2 gap-x-2.5 gap-y-5 lg:gap-y-10 items-center">
+          <h3 class="font-bold text-4xl text-white md:col-span-2 ">JOIN HYDRA</h3>
+          <img src="assets/images/line.svg" class="md:col-span-2 w-1/2 justify-self-center my-7">
+          <h3 class="font-light text-white text-4xl md:col-span-2 text-center mb-16">Let’s Build Your VR Experience</h3>
+          <input class="left-div h-16 bg-transparent rounded-3xl border px-10 py-5 border-1 text-white  border-white" placeholder="First Name">
+          <input class="right-div h-16 bg-transparent rounded-3xl border px-10 py-5 border-1 text-white border-white" placeholder="Last Name">
+          <input class="left-div h-16 bg-transparent rounded-3xl border px-10 py-5 border-1 text-white border-white" placeholder="Email">
+          <input class="right-div h-16 bg-transparent rounded-3xl border px-10 py-5 border-1 text-white border-white" placeholder="Phone Number">
+          <input class="bottom-div h-16 bg-transparent rounded-3xl border px-10 py-5 border-1 text-white border-white md:col-span-2" placeholder="Subject">
+          <textarea 
+            class="bottom-div h-52 bg-transparent rounded-3xl border px-10 py-5 border-1 text-white border-white md:col-span-2" 
+            placeholder="Tell Us Something..." 
+            rows="5">
+          </textarea>
+          <button class=" h-12 w-56 justify-self-center md:col-span-2 border border-purple font-semibold duration-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 ... text-sm  hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white text-center">
+            Send To Hydra
+          </button>
+        </div>
+
+       </section>
+
+    <!-- Footer Landing -->
+      <footer class="mt-24 bg-[url('assets/images/Vecter1819.svg')] bg-no-repeat bg-bottom">
+        <div class="container">
+
+        <div class="flex flex-col md:flex-row justify-center items-center w-full space-y-8 md:space-y-0 md:space-x-8">
+            <div class="w-52">
+              <img src="./assets/images/FrameFooter.svg" alt="">
+            </div>
+          
+            <hr class="h-48 w-1.5 hidden md:block bg-gradient-to-b from-[#343045] via-[#C0B7E8] to-[#343045] m-0 p-0 border-0 bg-transparent" />
+          
+            <div class="w-64 hidden md:block text-white space-y-3 text-base text-center font-semibold">
+              <p>ABOUT</p>
+              <p>SERVICES</p>
+              <p>TECHNOLOGIES</p>
+              <p>HOW TO</p>
+              <p>JOIN HYDRA</p>
+            </div>
+          
+            <hr class="h-48 w-1.5 hidden md:block bg-gradient-to-b from-[#343045] via-[#C0B7E8] to-[#343045] m-0 p-0 border-0 bg-transparent" />
+          
+            <div class="w-64 hidden md:block text-white text-center space-y-3 text-base font-semibold">
+              <p>F.A.Q</p>
+              <p>SITEMAP</p>
+              <p>CONDITIONS</p>
+              <p>LICENSES</p>
+            </div>
+          
+            <hr class="h-48 w-1.5 hidden md:block bg-gradient-to-b from-[#343045] via-[#C0B7E8] to-[#343045] m-0 p-0 border-0 bg-transparent" />
+          
+            <div class="w-64 space-y-10 flex flex-col items-center md:items-start">
+              <p class="font-semibold text-white">SOCIALIZE WITH HYDRA</p>
+              <div class="flex items-start justify-start gap-2">
+                <img class="social-icon" src="./assets/images/Socials/facebook.svg" alt="">
+                <img class="social-icon" src="./assets/images/Socials/twitter.svg" alt="">
+                <img class="social-icon" src="./assets/images/Socials/linkedin.svg" alt="">
+                <img class="social-icon" src="./assets/images/Socials/youtube.svg" alt="">
+                <img class="social-icon" src="./assets/images/Socials/instagram.svg" alt="">
+                <img class="social-icon" src="./assets/images/Socials/pinterest.svg" alt="">
+              </div>
+              <button class="text-[#343045] h-10 w-52 justify-self-center md:col-span-2 border border-purple font-semibold duration-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-xs px-5 py-1.5 bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-center">
+                BUILD YOUR WORLD
+              </button>
+            </div>
+          </div>
+          
+              <div class="mt-14 text-center text-white mb-10 px-5 pb-10">
+                <hr class="h-0.5 w-full bg-gradient-to-r from-[#343045] via-[#8176AF] to-[#343045] m-0 p-0 border-0 bg-transparent" />
+                <p class="mt-10 font-semibold text-sm">2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED </p>
+              </div>
+
+              </div>
+
+       </footer>
+
+       <!-- JS Slider  -->
+       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+       <script src="Scripts/ProcessSlider.js"></script>
+       <!-- JS animations -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+       <script src="Scripts/animations.js"></script>
+       <!-- JS Menu Responsive  -->
+        <script src="Scripts/mobileMenu.js"></script>
+  </body>
+</html>

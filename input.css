@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {}
+@layer components {}
+@layer utilities {
+
+}
+
+
+.social-icon {
+    @apply transition ease-in-out duration-300 transform;
+  }
+  
+  .social-icon:hover {
+    @apply -translate-y-1 scale-110;
+  }
+
+ .swiper-container{
+     @apply overflow-hidden
+ }
+
+  
